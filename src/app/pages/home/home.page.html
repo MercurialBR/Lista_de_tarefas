@@ -1,13 +1,13 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="primary">
-    <ion-title>
+  <ion-toolbar color="primary" class="animate__animated animate__backInDown">
+    <ion-title class="ion-text-center">
       Lista de Tarefas
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-list>
+  <ion-list class="animate__animated animate__backInRight">
     <ion-item *ngIf="tarefaCollection.length < 1">
       <ion-label> Não há tarefas </ion-label>
     </ion-item>
@@ -28,7 +28,7 @@
     </ion-item-sliding>
   </ion-list>
 
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" class="animate__animated animate__heartBeat">
     <ion-fab-button (click)="showAdd()"  color="primary">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
